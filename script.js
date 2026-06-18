@@ -203,19 +203,35 @@ function initFilters() {
 function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const note = document.getElementById('form-note');
     const btn = form.querySelector('button[type="submit"]');
     btn.textContent = 'Sending…';
     btn.disabled = true;
-    setTimeout(() => {
-      note.textContent = '✓ Message sent! I\'ll get back to you within 24 hours.';
-      btn.textContent = 'Send Message →';
-      btn.disabled = false;
-      form.reset();
-      setTimeout(() => { note.textContent = ''; }, 5000);
-    }, 1200);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mqeoveww', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        note.textContent = '✓ Message sent! I will get back to you within 24 hours.';
+        note.style.color = 'var(--accent2)';
+        form.reset();
+      } else {
+        note.textContent = '✗ Something went wrong. Please email me directly.';
+        note.style.color = '#f87171';
+      }
+    } catch (err) {
+      note.textContent = '✗ Network error. Please email me directly.';
+      note.style.color = '#f87171';
+    }
+
+    btn.textContent = 'Send Message →';
+    btn.disabled = false;
+    setTimeout(() => { note.textContent = ''; }, 5000);
   });
 }
 
