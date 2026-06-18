@@ -1,0 +1,605 @@
+                                                                                                                                                                                                                                                     <!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zainab Siddique — CS Student at FAST-NUCES. Aspiring Software & AI/ML Developer. Portfolio of 10+ projects in Python, C++, Web Dev, and Machine Learning." />
+  <meta name="keywords" content="Zainab Siddique, CS student, FAST-NUCES, internship, software developer, AI, machine learning, Python, C++, web development" />
+  <title>Zainab Siddique | CS Student & Aspiring Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-name">ZS</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Zainab<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="btn-nav" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="dot"></span> Available for Internships </p>
+      <h1 class="hero-name">Zainab<br /><span class="accent">Siddique</span></h1>
+      <p class="hero-role">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-bio">
+        CS undergraduate at <strong>FAST-NUCES</strong> · 10+ projects shipped · Passionate about building intelligent systems and clean software.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="Zainab_Siddique_Resume.docx" download class="btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="13">0</span><span>+</span><p>Projects</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="3" data-decimal="1">0</span><span>+</span><p>CGPA</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="6">0</span><span></span><p>Languages</p></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2>Building things<br /><span class="accent">that matter</span></h2>
+          <p>I'm a 4th-semester Computer Science student at FAST-NUCES with a genuine obsession for how software works — from the bit-level mechanics of Assembly to machine learning pipelines in Python.</p>
+          <p>I don't just study CS. I build: a Git-like version control system from scratch, an AI pathfinder using A* search, an ML-powered medical diagnosis tool. Every project is a chance to go deeper.</p>
+          <p>My goal is to join a team where I can contribute real engineering work as an intern and grow into a full-time software or AI/ML engineer.</p>
+          <div class="about-tags">
+            <span>Problem Solver</span>
+            <span>Fast Learner</span>
+            <span>AI Enthusiast</span>
+            <span>Open Source</span>
+          </div>
+        </div>
+        <div class="about-card-wrap reveal">
+          <div class="about-card">
+            <div class="about-card-row">
+              <div class="about-card-icon">🎓</div>
+              <div>
+                <p class="about-card-label">University</p>
+                <p class="about-card-val">FAST-NUCES, CFD Campus</p>
+              </div>
+            </div>
+            <div class="about-card-row">
+              <div class="about-card-icon">📚</div>
+              <div>
+                <p class="about-card-label">Degree</p>
+                <p class="about-card-val">BS Computer Science · Batch 2024</p>
+              </div>
+            </div>
+            <div class="about-card-row">
+              <div class="about-card-icon">⭐</div>
+              <div>
+                <p class="about-card-label">Current CGPA</p>
+                <p class="about-card-val">3.0+ (Ongoing)</p>
+              </div>
+            </div>
+            <div class="about-card-row">
+              <div class="about-card-icon">📍</div>
+              <div>
+                <p class="about-card-label">Location</p>
+                <p class="about-card-val">Punjab, Pakistan</p>
+              </div>
+            </div>
+            <div class="about-card-row">
+              <div class="about-card-icon">🎯</div>
+              <div>
+                <p class="about-card-label">Seeking</p>
+                <p class="about-card-val">Software / AI / Web Internship</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Education</div>
+      <h2 class="section-title reveal">Academic <span class="accent">Journey</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-badge">Current</span>
+              <span class="timeline-date">2024 – Present</span>
+            </div>
+            <h3>BS Computer Science</h3>
+            <p class="timeline-org">FAST-NUCES · Chiniot-Faisalabad Campus</p>
+            <p class="timeline-desc">Majoring in Computer Science with focus on AI/ML, Software Engineering, and Database Systems. Current CGPA: 3.0+</p>
+            <div class="timeline-courses">
+              <span>Data Structures & Algorithms</span>
+              <span>OOP (C++)</span>
+              <span>Database Systems</span>
+              <span>Computer Architecture</span>
+              <span>Machine Learning</span>
+              <span>Web Development</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-badge completed">Completed</span>
+              <span class="timeline-date">2022 – 2024</span>
+            </div>
+            <h3>Intermediate FSc · Pre-Engineering</h3>
+            <p class="timeline-org">Punjab Group of Colleges</p>
+            <p class="timeline-desc">Pre-Engineering track covering Mathematics, Physics, and Chemistry with strong academic performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">Technical Skills</div>
+      <h2 class="section-title reveal">What I <span class="accent">Work With</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">C</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Assembly</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+            <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">HTML5</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><span class="skill-name">CSS3</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Responsive Design</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <h3>AI & Machine Learning</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Scikit-learn</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Pandas / NumPy</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Data Preprocessing</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Search Algorithms</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗃️</span>
+            <h3>Tools & Databases</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Git & GitHub</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">MySQL / SQL</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+            <div class="skill-item"><span class="skill-name">VS Code / Visual Studio</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Jupyter Notebook</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title reveal">Things I've <span class="accent">Built</span></h2>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="cpp">C / C++</button>
+        <button class="filter-btn" data-filter="game">Games</button>
+        <button class="filter-btn" data-filter="db">Databases</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card reveal" data-category="ai">
+          <div class="project-top">
+            <span class="project-num">01</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Artificial-Intelligence-Final-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Medical Diagnosis ML System</h3>
+          <p>Supervised ML pipeline using Scikit-learn and Pandas that classifies diseases from a 4,000+ record symptom dataset. Implements Decision Tree and Naive Bayes classifiers with full evaluation metrics.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>ML</span>
+          </div>
+          <div class="project-category-badge ai">AI / ML</div>
+        </div>
+
+        <div class="project-card reveal" data-category="ai">
+          <div class="project-top">
+            <span class="project-num">02</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/AI-pathfinder" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>AI Pathfinder & Informed Search</h3>
+          <p>Implements A*, BFS, and heuristic-based informed search algorithms in Python to visualise and solve shortest-path problems on dynamic grid environments with step-by-step animation.</p>
+          <div class="project-tags">
+            <span>Python</span><span>A* Algorithm</span><span>RBFS</span><span>AI</span>
+          </div>
+          <div class="project-category-badge ai">AI / ML</div>
+        </div>
+
+        <div class="project-card reveal" data-category="ai">
+          <div class="project-top">
+            <span class="project-num">03</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Probability-and-Statistics-Final-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>AI-Powered AirVision Analytics</h3>
+          <p>AI-assisted platform for statistical analysis, data visualisation, pattern detection, and automated insight generation. Processes datasets and surfaces trends through clean dashboards.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Data Analysis</span><span>Visualisation</span><span>Prob & Stats</span>
+          </div>
+          <div class="project-category-badge ai">AI / ML</div>
+        </div>
+
+        <div class="project-card reveal" data-category="cpp">
+          <div class="project-top">
+            <span class="project-num">04</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Object-Oriented-Programming-Final-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Stronghold Management System</h3>
+          <p>Turn-based kingdom management simulation in C++ featuring resource management, military operations, economic systems, leadership decisions, and procedurally generated random events.</p>
+          <div class="project-tags">
+            <span>C++</span><span>OOP</span><span>Simulation</span><span>Data Structures</span>
+          </div>
+          <div class="project-category-badge cpp">C / C++</div>
+        </div>
+
+        <div class="project-card reveal" data-category="cpp">
+          <div class="project-top">
+            <span class="project-num">05</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Operating-Systems-Final-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Hospital Patient Triage & Bed Allocator</h3>
+          <p>Priority-queue–based triage system in C that allocates beds to patients by acuity level, simulating real hospital intake workflows with dynamic resource management.</p>
+          <div class="project-tags">
+            <span>C</span><span>Priority Queue</span><span>Systems</span><span>Healthcare</span>
+          </div>
+          <div class="project-category-badge cpp">C / C++</div>
+        </div>
+
+        <div class="project-card reveal" data-category="cpp">
+          <div class="project-top">
+            <span class="project-num">06</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Discrete-Structures-project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Smart Campus Access System</h3>
+          <p>Secure campus management solution built in C++ for access control, user authentication, attendance monitoring, and visitor management with role-based permissions.</p>
+          <div class="project-tags">
+            <span>C++</span><span>OOP</span><span>Security</span><span>Access Control</span>
+          </div>
+          <div class="project-category-badge cpp">C / C++</div>
+        </div>
+
+        <div class="project-card reveal" data-category="db">
+          <div class="project-top">
+            <span class="project-num">07</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Database-Systems-Final-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Smart City Traffic & Challan System</h3>
+          <p>Normalised relational database schema for city traffic management. Features challan generation, vehicle lookup, officer management, and analytics dashboards with complex SQL queries.</p>
+          <div class="project-tags">
+            <span>SQL</span><span>Database</span><span>Analytics</span><span>Web</span>
+          </div>
+          <div class="project-category-badge db">Database</div>
+        </div>
+<div class="project-card reveal" data-category="web">
+          <div class="project-top">
+            <span class="project-num">08</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/ICT-Final-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Café Website</h3>
+          <p>Customer-friendly café website featuring dynamic menu display, services showcase, image gallery, reservation form, and modern UI design with smooth scroll animations.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>UI/UX</span>
+          </div>
+          <div class="project-category-badge web">Web Dev</div>
+        </div>
+
+        <div class="project-card reveal" data-category="game">
+          <div class="project-top">
+            <span class="project-num">09</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Programming-Fundamentals-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Space Ranger: Alien Invasion</h3>
+          <p>2D arcade shooter in C++ with real-time collision detection, enemy wave management, scoring system, and level progression built using OOP design patterns.</p>
+          <div class="project-tags">
+            <span>C++</span><span>OOP</span><span>Game Dev</span><span>Physics</span>
+          </div>
+          <div class="project-category-badge game">Game</div>
+        </div>
+
+        <div class="project-card reveal" data-category="game">
+          <div class="project-top">
+            <span class="project-num">10</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/COAL-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Atari Breakout Arcade Game</h3>
+          <p>Classic arcade-style Breakout game built in Assembly language featuring collision detection, brick-breaking physics, score tracking, and multi-level progression.</p>
+          <div class="project-tags">
+            <span>Assembly</span><span>Game Dev</span><span>Low-level</span><span>Physics</span>
+          </div>
+          <div class="project-category-badge game">Game</div>
+        </div>
+
+
+        <div class="project-card reveal" data-category="cpp">
+          <div class="project-top">
+            <span class="project-num">11</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Data-Structures-Project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>GitLit — Version Control System</h3>
+          <p>A Git-like version control system built from scratch in C++ implementing core VCS concepts: repository init, staging, commits, branching, and diff tracking using custom data structures.</p>
+          <div class="project-tags">
+            <span>C++</span><span>Data Structures</span><span>OOP</span><span>Systems</span>
+          </div>
+          <div class="project-category-badge cpp">C / C++</div>
+        </div>
+
+        <div class="project-card reveal" data-category="ai">
+          <div class="project-top">
+            <span class="project-num">12</span>
+            <div class="project-links">
+              <a href="https://github.com/zainabsiddique716-gif/Informed-Search-Pathfinder" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Uninformed Search Pathfinder</h3>
+          <p>AI project implementing informed search algorithms including A* and heuristic-based techniques for efficient pathfinding and route discovery across grid and graph environments.</p>
+          <div class="project-tags">
+            <span>Python</span><span>BFS</span><span>DFS</span><span>DLS</span><span>IDS</span><span>AI</span>
+          </div>
+          <div class="project-category-badge ai">AI / ML</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-label">Achievements</div>
+      <h2 class="section-title reveal">What I've <span class="accent">Accomplished</span></h2>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🚀</div>
+          <h3>13+ Projects Shipped</h3>
+          <p>Built and delivered 13+ fully functional projects spanning AI/ML, web development, systems programming, and game development.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🤖</div>
+          <h3>AI & ML Expertise</h3>
+          <p>Applied supervised machine learning to real-world medical data and implemented A* and BFS pathfinding algorithms from scratch.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">⚡</div>
+          <h3>Multi-Language Proficiency</h3>
+          <p>Proficient in 6+ languages including Python, C++, C, SQL, Assembly, and JavaScript — from high-level to bare metal.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🌐</div>
+          <h3>Full-Stack Web Development</h3>
+          <p>Designed and deployed responsive websites with semantic HTML5, CSS3 animations, and JavaScript DOM manipulation.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🎓</div>
+          <h3>CGPA 3.0+ at FAST-NUCES</h3>
+          <p>Maintaining strong academic performance at one of Pakistan's top CS universities while building real-world projects.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🔧</div>
+          <h3>Systems & Low-Level Programming</h3>
+          <p>Built a version control system in C++, arcade games in Assembly, and hospital triage systems in C — demonstrating deep systems knowledge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title reveal">Let's <span class="accent">Connect</span></h2>
+      <p class="contact-sub reveal">I'm actively looking for internship opportunities in Software Development, AI/ML, and Web Development. If you have a role or want to chat, reach out.</p>
+      <div class="contact-grid">
+        <div class="contact-links reveal">
+          <a href="mailto:zainabsiddique716@gmail.com" class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <p class="contact-item-label">Email</p>
+              <p class="contact-item-val">zainabsiddique716@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/zainab-siddique0824/" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">💼</div>
+            <div>
+              <p class="contact-item-label">LinkedIn</p>
+              <p class="contact-item-val">linkedin.com/in/zainab-siddique0824</p>
+            </div>
+          </a>
+          <a href="https://github.com/zainabsiddique716-gif" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">🐙</div>
+            <div>
+              <p class="contact-item-label">GitHub</p>
+              <p class="contact-item-val">github.com/zainabsiddique716-gif</p>
+            </div>
+          </a>
+          <a href="tel:+923136137648" class="contact-item">
+            <div class="contact-item-icon">📱</div>
+            <div>
+              <p class="contact-item-label">Phone</p>
+              <p class="contact-item-val">+92-313-6137648</p>
+            </div>
+          </a>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Message →</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">Zainab<span class="accent">.</span></a>
+        <div class="footer-social">
+          <a href="https://github.com/zainabsiddique716-gif" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/zainab-siddique0824/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:zainabsiddique716@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Zainab Siddique · CS Student at FAST-NUCES · Open to Internships</p>
+        <a href="#hero" class="back-top" id="back-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
